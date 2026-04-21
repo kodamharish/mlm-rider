@@ -28,6 +28,20 @@ DEBUG = True
 ALLOWED_HOSTS = ['*']
 
 
+
+# CORS settings
+CORS_ALLOW_ALL_ORIGINS = True
+
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:3000",
+    "https://rahul30.pythonanywhere.com/",  # Add this line
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+    "https://rahul30.pythonanywhere.com/",
+]
+
 # Application definition
 
 INSTALLED_APPS = [
